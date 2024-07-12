@@ -1,0 +1,6 @@
+.env
+todo.txt
+git_assist.txt
+**/logs
+**/logs/debug.log
+*.log 

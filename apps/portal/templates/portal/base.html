@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% comment %} Remix icons {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {% comment %} BOXICONS {% endcomment %}
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" >
+
+    {% comment %} Font Awesome {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>{{title}}</title>
+
+    {% comment %} Custom css for all pages {% endcomment %}
+    <link rel="stylesheet" href="{% static 'styles/custom.css' %}">
+ 
+    
+</head>
+<body>
+    
+    <div class="container"> 
+        <!-- Multilanguage support -->
+        <div class="langWrap">
+            <a href="#" class="english active" language="english">EN
+                <!-- <img class="flag" src="{% static 'img/flag_kingdom.png' %}" alt=""> -->
+            </a>
+            <a href="#" class="norwegian " language="norwegian">NO
+                <!-- <img class="flag" src="{% static 'img/flag_norway.png' %}" alt=""> -->
+            </a>
+            <a href="#" class="greek" language="greek">ΕΛ
+                <!-- <img class="flag" src="{% static 'img/flag_greece.png' %}" alt=""> -->
+            </a>
+        </div>
+    
+        {% include 'portal/navbar.html' %}
+
+   
+
+        <div class="main">
+            <section class="main__hero" id="main-hero">
+                
+                    {% block content %}
+    
+                     {% endblock content %}
+            
+            </section>
+
+
+    
+        </div>
+
+    </div>
+    
+
+    <script src=" {% static 'scripts/custom.js' %} "></script>
+</body>
+</html>

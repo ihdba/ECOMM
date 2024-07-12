@@ -1,0 +1,74 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    <div class="food_container">
+        <div class="food_header">
+            <h1 class="food_title">Food Stories</h1>
+            <h3 class="food_subtitle">Food and products presented to you by the ambassadors of Greek cooking.</h3>
+            <p class="food_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ex possimus qui quidem perferendis officia architecto commodi, tempora obcaecati ducimus!</p>
+
+        </div>
+
+        <section class="food_card">
+            <div class="food_card-box">
+                <div class="food_wrapper">
+                    <!-- CARD ITEM(S) -->
+                    <div class="food_card-item">
+                        <img src="{% static 'img/foodies/paxxi.jpg' %}" alt="">
+                        <h2 class="foody_title">Irene</h2>
+                        <div class="food_rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <p class="foody_desc">
+                            Hi. 
+                            I am Eirini from Paxxi, an award winning blog with new video recipes every week, broadcasting from the island of Crete. My channel is completely independent and driven by my passion for a healthier, home cooking. If I can do it, you can too! Any mentioned brands are only because I personally use them. All sponsors are clearly mentioned in the description of the video.
+                        </p>
+                    </div>
+
+                    <div class="food_card-item">
+                        <img src="{% static 'img/foodies/akis.jpg' %}" alt="">
+                        <h2 class="foody_title">Akis</h2>
+                        <div class="food_rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <p class="foody_desc">
+                            Hi Guys and welcome to my channel!
+                            Visit my English YouTube channel Akis Petretzikis Kitchen: http://bit.ly/akiskitchenen . A place with a true variety of flavors, aromas and culinary experiences! Here you will find the simplest to the most special recipes! Get ready to cook easy, quick, tasty recipes and if you are looking for subversive but also everyday recipes you are in the right place! Don't forget to leave me a comment on what you want to  see! Comment, like & share if you like my recipes
+                        </p>
+                    </div>
+
+                    <div class="food_card-item">
+                        <img src="{% static 'img/foodies/Yiannis.jpg' %}" alt="">
+                        <h2 class="foody_title">Yiannis Lucacos</h2>
+                        <div class="food_rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <p class="foody_desc">
+                            Γεια χαρά σε όλους! Καλώς ορίσατε στο επίσημο κανάλι μου στο YouTube, όπου θα μοιραζόμαστε συνταγές, σχόλια, εντυπώσεις, μυστικά και συμβουλές για να γίνετε οι καλύτεροι chef. Ψάχνετε κάτι γρήγορο και εύκολο, θα το βρείτε εδώ! Θέλετε να εντυπωσιάσετε τους καλεσμένους σας με πιο εκλεπτυσμένες καιευφάνταστες συνταγές, κάντε μια αναζήτηση εδώ! Αναρωτιέστε τι να φτιάξετε για ένα οικογενειακό τραπέζι, οι λύσεις είναι εδώ! Εσείς το μόνο που πρέπει να κάνετε είναι like, comment και share κάτω από το video και φυσικά subscribe για να μην χάνετε τα νέα video συνταγών και συμβουλών που δημοσιεύονται κάθε εβδομάδα! Our Website yiannislucacos.gr
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    
+
+
+{% endblock content %}
