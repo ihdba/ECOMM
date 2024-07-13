@@ -382,3 +382,98 @@ section {
     }
 }
 
+
+
+/* ==================== VENDORS =================== */
+.vendor_container{
+    background-color: rgba(101, 115, 131, 0.5); 
+    width: 100%;
+    overflow: hidden;
+    color: #000;
+}
+.vendor_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.food_header a {
+    color: white;
+}
+
+.vendor_title{
+    font-size: 1.5rem;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.vendor_subtitle{
+    font-size: 1.1rem;
+    margin: 10px ;
+}
+
+.vendor_content{
+    font-size: 1.2rem;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 12rem 12% 10rem;
+}
+
+/* Vendor Card  */
+
+.vendor_card{
+    background-color: rgba(229, 228, 226, 0.5);
+}
+
+.vendor_card-box{
+    block-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vendor_card-box img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 5px solid #616D7E;
+}
+
+.vendor_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.vendor_card-item{
+    min-height: 350px;
+    min-width: 450px;
+    background-color: #DADBDD;
+    border: 3px solid rgba(97, 109, 126, 0.3);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: #000;
+    transition: 0.4s ease-in-out;
+}
+
+
+.vendor_card-item:hover {
+    border: 3px solid slateblue;
+    transform: translateY(-10px) scale(1.08);
+    box-shadow: 0 0 50px slategray;
+}
+
+.vendor_desc{
+    font-size: 1.1rem;
+}

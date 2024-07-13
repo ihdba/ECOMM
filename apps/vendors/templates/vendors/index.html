@@ -1,8 +1,46 @@
 {% extends 'portal/base.html' %}
-
+{% load static %}
 
 {% block content %}
     
-    <h1>Vendors</h1>
+<div class="vendor_container">
+    <div class="vendor_header">
+        <h1 class="vendor_title">Get to know our Vendors,</h1>
+        <h3 class="vendor_subtitle">Products are made or imported by the great companies that keeps the high standards for quality. True to the traditions, the products presented by vendors bring the flavours of Greece to your table.</h3>
+        <p class="vendor_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ex possimus qui quidem perferendis officia architecto commodi, tempora obcaecati ducimus!
+        </p>
+        <a type="button" href="{% url 'add_vendor'  %}">Add Vendor</a>
+
+    </div>
+
+    <section class="vendor_card">
+        <div class="vendor_card-box">
+            <div class="vendor_wrapper">
+                <!-- CARD ITEM(S) -->
+
+                {% for v in vendors %}
+                    <div class="vendor_card-item">
+                        <img src="{% get_media_prefix %}{{v.vendor_img}}" alt="{{v.vendor_name}}">
+                        <h2 class="vendor_title">{{v.vendor_name}}</h2>
+                        {% comment %} <div class="vendor_rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div> {% endcomment %}
+                        <p class="vendor_desc">
+                            {{v.vendor_desc}}
+                        </p>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    
+</div>
+
 
 {% endblock content %}
