@@ -9,7 +9,11 @@
         <h3 class="product_subtitle">Products are made or imported by the great companies that keeps the high standards for quality. True to the traditions, the products presented by vendors bring the flavours of Greece to your table.</h3>
         <p class="product_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ex possimus qui quidem perferendis officia architecto commodi, tempora obcaecati ducimus!
         </p>
-        <a type="button" href="{% url 'add_product'  %}">Add Product</a>
+        {% if user.is_authenticated %}
+            Welcome,{{request.user.first_name}}           
+            <a type="button" href="{% url 'add_product'  %}">Add Product</a>
+        {% endif %}
+        
 
     </div>
 

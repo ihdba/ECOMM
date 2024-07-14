@@ -7,9 +7,12 @@ from .forms import ProducerForm
 def index(request):
 
     producers = Producer.objects.all()
+    
+    
     context = {
         'title': 'ECOMM Producers',
         'producers': producers,
+        
     }
 
     return render(request, 'producers/index.html', context=context)
