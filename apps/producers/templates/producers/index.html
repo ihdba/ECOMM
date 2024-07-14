@@ -1,0 +1,42 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block content %}
+    
+<div class="product_container">
+    <div class="product_header">
+        <h1 class="product_title">Producers</h1>
+        <h3 class="product_subtitle">Companies and Producers. The keepers of long traditions to bring the taste from field to the table</h3>
+        <p class="product_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ex possimus qui quidem perferendis officia architecto commodi, tempora obcaecati ducimus!
+        </p>
+        <a type="button" href="{% url 'add_producer'  %}">Add Producer</a>
+
+    </div>
+
+    <section class="product_card">
+        <div class="product_card-box">
+            <div class="product_wrapper">
+                <!-- CARD ITEM(S) -->
+
+                {% for p in producers %}
+                    <div class="product_card-item">
+                        <img src="{% get_media_prefix %}{{p.producer_logo}}" alt="{{p.company}}">
+                        <h2 class="product_title">{{p.company}}</h2>
+                        <div class="product_rating">
+                            <i class='bx bx-like'></i>
+                            <span class="likes">{{ p.likes }}</span>
+                        </div>
+                        <p class="product_desc">
+                            {{p.desc}}
+                        </p>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+{% endblock content %}

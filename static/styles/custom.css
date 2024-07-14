@@ -243,7 +243,7 @@ header{
 }
 
 
-/* =============== FOOD PAGES ================= */
+/* =============== FOOD CHANNELS PAGES ================= */
 
 
 .food_container {
@@ -476,4 +476,169 @@ section {
 
 .vendor_desc{
     font-size: 1.1rem;
+}
+
+
+
+/*  Vendor RESPONSIVE */
+@media (max-width: 1800px) {
+    .vendor_container{
+        font-size: 50%;
+    }
+    .vendor_card .vendor_wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 1285px) {
+    .vendor_container{
+        font-size: 50%;
+    }
+    .vendor_card .vendor_wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width: 991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .vendor_card .vendor_wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .vendor_header {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+/* ========================= PRODUCTS ==========================*/
+
+
+.product_container{
+    background-color: #E9E4D4;   /* Ash White */
+    width: 100%;
+    overflow: hidden;
+    color: #000;
+}
+.product_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.food_header a {
+    color: #8E35EF; /* purple plum*/
+}
+
+.product_title{
+    font-size: 1.5rem;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.product_subtitle{
+    font-size: 1.1rem;
+    margin: 10px ;
+}
+
+.product_content{
+    font-size: 1.2rem;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 12rem 12% 10rem;
+}
+
+/* product Card  */
+
+.product_card{
+    background-color: rgba(251, 251, 249, 0.5);
+}
+
+.product_card-box{
+    block-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product_card-box img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 5px solid #FEF0E3;  /* OldLace*/
+}
+
+.product_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.product_card-item{
+    min-height: 350px;
+    min-width: 450px;
+    background-color: #EFEBD8; /* Warm White */
+    border: 3px solid rgba(233, 171, 23, 0.3);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: #000;
+    transition: 0.4s ease-in-out;
+}
+
+
+.product_card-item:hover {
+    border: 3px solid #EDC9AF; /* Desert Sand */
+    transform: translateY(-10px) scale(1.08);
+    box-shadow: 0 0 50px #C4AEAD; /* Silver Pink*/
+}
+
+.product_desc{
+    font-size: 1.1rem;
+}
+
+
+
+@media (max-width: 1800px) {
+    .product_container{
+        font-size: 50%;
+    }
+    .product_card .product_wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 1285px) {
+    .product_container{
+        font-size: 50%;
+    }
+    .product_card .product_wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width: 991px) {
+ 
+    .product_card .product_wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product_header {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }

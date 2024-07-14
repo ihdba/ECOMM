@@ -9,14 +9,44 @@
                     <i class="ri-home-line"></i>Home
                 </a>
             </li>
+
             <li>
                 <a href="{% url 'products' %}">Products</a>
             </li>
-            <li><a href="{% url 'vendors' %}">
-                <i class='bx bxs-store'></i> Vendors</a></li>
-            <li><a href="{% url 'food' %}"><i class='bx bx-bowl-hot'></i>Food Stories</a></li>
-            <li><a href="{% url 'about' %}">About Us</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
+
+            <li>
+                <a href="{% url 'vendors' %}">
+                <i class='bx bxs-store'></i> 
+                Vendors
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'food' %}">
+                    <i class='bx bx-bowl-hot'></i>
+                    Food Stories
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'producers' %}">
+                <i class='bx bxs-store'></i>
+                    Producers
+                </a>
+            </li>
+            
+            <li>
+                <a href="{% url 'about' %}">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'contact' %}">
+                    Contact
+                </a>
+            </li>
+
         </ul>
         <div class="toggle_btn" id="toggle-btn">
             <!-- <i class="fa-solid fa-bars"></i> -->
@@ -26,15 +56,27 @@
 
     <!-- responsive dropdown  -->
     <div class="dropdown_menu">
-        <li><a href="{% url 'home' %}"><i class="ri-home-line"></i>Home</a></li>
-            <li><a href="{% url 'products' %}">Products</a></li>
-            <li><a href="{% url 'vendors' %}">
+        <li>
+            <a href="{% url 'home' %}"><i class="ri-home-line"></i>Home</a>
+        </li>
+        <li>
+            <a href="{% url 'products' %}">Products</a>
+        </li>
+        <li><a href="{% url 'vendors' %}">
                 <i class='bx bxs-store'></i>
-                Vendors</a></li>
-            <li><a href="{% url 'food' %}">
+                Vendors</a>
+        </li>
+        <li>
+            <a href="{% url 'food' %}">
                 <i class='bx bx-bowl-hot'></i>Food Stories
-            </a></li>
-            <li><a href="{% url 'about' %}">About Us</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'producers' %}">
+                <i class='bx bxs-store'></i> Producers
+            </a>
+        </li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
     </div>
 </header>

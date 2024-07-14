@@ -11,5 +11,6 @@ urlpatterns = [
     path('products/', include('apps.products.urls')),
     path('vendors/', include('apps.vendors.urls')),
     path('food/', include('apps.food.urls')),
+    path('producers/', include('apps.producers.urls')),
 ]
 
