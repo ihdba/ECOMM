@@ -4,16 +4,14 @@
 {% load static %}
 
 
-{% block title %} Log In {% endblock %}
+{% block title %} Sign Up {% endblock %}
 
 {% block content %}
-<h2>Login</h2>
+<h2>Sign Up</h2>
 <form method="post">
     {% csrf_token %}
     {{ form }}
-    <button type="submit">Log In</button>
+    <button type="submit">Sign Up</button>
 </form>
-<p>Not registered?</p>
-<a href="{% url 'signup' %}">Sign Up</a>
 
 {% endblock %}

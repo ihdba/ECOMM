@@ -1,6 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.urls import reverse_lazy
+from django.contrib.auth.forms import UserCreationForm
+from django.views.generic import CreateView
 
 
 
@@ -13,22 +15,8 @@ def dashboard(request):
     return render(request, 'crm/dashboard.html', context=context)
 
 
-def register(request):
-    
-    context = {
-        'title': 'ECOMM Dashboard |Register',
-    }
 
-    return render(request, 'crm/register.html', context=context)
-
-def my_login(request):
-
-    context = {
-        'title': 'ECOMM Dashboard | Login',
-    }
-
-    return render(request, 'crm/my-login.html', context=context)
-
-
-
-
+class SignUpView(CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy("login")
+    template_name = "registration/signup.html"

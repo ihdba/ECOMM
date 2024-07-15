@@ -4,7 +4,7 @@
 {% block title %} Dashboard {% endblock %}
 {% block content %}
 
-{% include "crm/dash-nav.html" %}
+{% comment %} {% include "crm/dash-nav.html" %} {% endcomment %}
 
 {% if user.is_authenticated %}
     <div class="dashboard">
