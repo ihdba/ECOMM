@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'apps.vendors',
     'apps.food',
     'apps.producers',
+    'apps.locations',
     
     'apps.crm',
     #'apps.accounts',
