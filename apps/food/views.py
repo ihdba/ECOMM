@@ -9,7 +9,6 @@ def index(request):
 
     foodies = Food_Channel.objects.all()
     context = {
-        'title': 'ECOMM Food Stories',
         'foodies':foodies,
     }
 

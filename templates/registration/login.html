@@ -1,0 +1,17 @@
+
+<!-- templates/registration/login.html -->
+{% extends 'portal/base.html' %}
+{% load static %}
+
+
+{% block title %} Log In {% endblock %}
+
+{% block content %}
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Log In</button>
+</form>
+
+{% endblock %}

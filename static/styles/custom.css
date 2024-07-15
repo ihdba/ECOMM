@@ -139,7 +139,7 @@ header{
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 550px;
 }
 
 
@@ -651,7 +651,7 @@ section {
 
 .dashboard {
     background-color: #666362;
-    width: 100%;
+    width: 1200px;
     min-height: 100vh;
     color: white;
     margin: auto;

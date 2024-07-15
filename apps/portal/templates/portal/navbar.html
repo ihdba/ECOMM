@@ -46,10 +46,27 @@
                     Contact
                 </a>
             </li>
-            <li>
+            {% comment %} <li>
                 <a href="{% url 'dashboard' %}">
                     Dashboard
                 </a>
+            </li> {% endcomment %}
+            
+            {% comment %} <li>
+                <a href="{% url 'accounts' %}">
+                    Accounts
+                </a>
+            </li> {% endcomment %}
+
+            <li>
+                {% if user.is_authenticated %}
+                    {{ user }}
+                {% else %}
+                <i class='bx bx-user' style='color:#000' ></i>
+                <a href="{% url 'dashboard' %}">
+                    Login
+                </a>
+                {% endif %}
             </li>
 
         </ul>
@@ -81,12 +98,25 @@
                 <i class='bx bxs-store'></i> Producers
             </a>
         </li>
-        <li><a href="{% url 'about' %}">About Us</a></li>
-        <li><a href="{% url 'contact' %}">Contact</a></li>
+
         <li>
-            <a href="{% url 'dashboard' %}">
-                Dashboard
-            </a>
+            <a href="{% url 'about' %}">About Us</a>
         </li>
+
+        <li>
+            <a href="{% url 'contact' %}">Contact</a>
+        </li>
+
+        <li>
+            {% if user.is_authenticated %}
+                {{ user }}
+            {% else %}
+            <i class='bx bx-user' style='color:#000' ></i>
+            <a href="{% url 'dashboard' %}">
+                Login
+            </a>
+            {% endif %}
+        </li>
+        
     </div>
 </header>

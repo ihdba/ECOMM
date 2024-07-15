@@ -7,7 +7,7 @@ from django.shortcuts import render
 def dashboard(request):
     
     context = {
-        'title': 'ECOMM Dashboard',
+        
     }
 
     return render(request, 'crm/dashboard.html', context=context)
