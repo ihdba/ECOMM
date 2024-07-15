@@ -64,10 +64,13 @@
 
             <li>
                 {% if user.is_authenticated %}
-                    {{ user }}
+               
+                    <a href="{% url 'dashboard' %}">
+                        <i class='bx bx-user' style='color:#000' ></i> {{ user }}
+                    </a>
                 {% else %}
                 <i class='bx bx-user' style='color:#000' ></i>
-                <a href="{% url 'dashboard' %}">
+                <a href="{% url 'login' %}">
                     Login
                 </a>
                 {% endif %}

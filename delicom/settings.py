@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'apps.producers',
     'apps.locations',
     
-    'apps.crm',
+    'apps.accounts',
     #'apps.accounts',
 ]
 

@@ -14,6 +14,6 @@ urlpatterns = [
     path('food/', include('apps.food.urls')),
     path('producers/', include('apps.producers.urls')),
     path('locations/', include('apps.locations.urls')),
-    path('dashboard/', include('apps.crm.urls')),
+    path('dashboard/', include('apps.accounts.urls')),
 ]
 
