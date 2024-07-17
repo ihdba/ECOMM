@@ -22,6 +22,7 @@
                     <!-- CARD ITEM(S) -->
 
                     {% for f in foodies %}
+                   <a href="{{ f.channel_link }}" target="_blank">
                     <div class="food_card-item">
                         <img src="{% get_media_prefix %}{{f.channel_img}}" alt="{{f.channel_name}}">
                         <h2 class="foody_title">{{f.channel_name}}</h2>
@@ -36,7 +37,7 @@
                             {{f.channel_description}}
                         </p>
                     </div>
-
+                </a>
                     {% endfor %}
 
                 </div>

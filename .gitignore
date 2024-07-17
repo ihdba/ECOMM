@@ -4,3 +4,4 @@ git_assist.txt
 **/logs
 **/logs/debug.log
 *.log 
+./devenv

@@ -50,17 +50,17 @@
                     Contact
                 </a>
             </li>
-            {% comment %} <li>
-                <a href="{% url 'dashboard' %}">
-                    Dashboard
+            <li>
+                <a href="{% url 'post_list' %}">
+                    Blog
                 </a>
-            </li> {% endcomment %}
-            
-            {% comment %} <li>
-                <a href="{% url 'accounts' %}">
-                    Accounts
+            </li> 
+
+            <li>
+                <a href="{% url 'music' %}">
+                    <i class='bx bxs-music' style='color:#000' ></i>Music
                 </a>
-            </li> {% endcomment %}
+            </li>
 
             <li>
                 {% if user.is_authenticated %}
@@ -116,6 +116,15 @@
 
         <li>
             <a href="{% url 'contact' %}">Contact</a>
+        </li>
+        <li>
+            <a href="{% url 'post_list' %}">Blog</a>
+        </li>
+
+        <li>
+            <a href="{% url 'music' %}">
+                <i class='bx bxs-music' style='color:#000' ></i>Music
+            </a>
         </li>
 
         <li>

@@ -48,9 +48,12 @@ INSTALLED_APPS = [
     'apps.food',
     'apps.producers',
     'apps.locations',
+    'apps.blog',
+    'apps.music',
+    
     
     'apps.accounts',
-    #'apps.accounts',
+
 ]
 
 MIDDLEWARE = [
@@ -153,3 +156,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = "dashboard"  # new
 LOGOUT_REDIRECT_URL = "dashboard"  # new
+
+#testing password reset email, sendt to console
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend" # new

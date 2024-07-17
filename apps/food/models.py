@@ -8,6 +8,7 @@ class Food_Channel(models.Model):
     channel_rating = models.CharField(max_length=5)
     channel_description = models.TextField()    
     channel_img = models.ImageField(upload_to='img/foodies/', default=None)
+    channel_link = models.URLField(null=True, blank=True)
     
     
     def __str__(self):

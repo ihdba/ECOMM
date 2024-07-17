@@ -1,0 +1,44 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block title %} Music of Greece {% endblock %}
+{% block content %}
+
+
+<div class="product_container">
+    <div class="product_header">
+        <h1 class="product_title">Music</h1>
+        <h3 class="product_subtitle">Music of Greece</h3>
+        <p class="product_content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ex possimus qui quidem perferendis officia architecto commodi, tempora obcaecati ducimus!
+        </p>
+        {% if user.is_authenticated %}
+            Welcome,{{request.user.first_name}}  
+            <a type="button" href="{% url 'add_music'  %}">Add Music Video</a>
+        {% endif%}
+    </div>
+
+    <section class="product_card">
+        <div class="product_card-box">
+            <div class="product_wrapper">
+                <!-- CARD ITEM(S) -->
+
+                {% for v in mvideos %}
+                    <a href="{{ v.m_link }}" target="_blank">
+                    <div class="product_card-item">
+                        <img src="{% get_media_prefix %}{{v.m_img}}" alt="{{v.m_name}}">
+                        <h2 class="product_title">{{v.m_name}}</h2>
+                        <p class="product_desc">
+                            {{v.m_description}}
+                        </p>
+                    </div>
+                    </a>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+
+{% endblock %}

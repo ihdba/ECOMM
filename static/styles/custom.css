@@ -661,3 +661,50 @@ section {
     width: 100%;
     background-color: #888B90 ;
 }
+
+
+
+
+
+
+/* ===================== BLOG STYLES ===================== */
+.blog_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.blog_header{
+    width: 100%;
+    height: 50px;
+}
+
+.blog_title{
+    font-size: xx-large;
+    color: #000;
+}
+.main_section{
+    display: flex;
+    gap: 10px;
+}
+.new_post{
+    background-color:  lightblue;
+}
+.post_title{
+    font-size: medium;
+    color: #000;
+}
+.post_article{
+    font-size: 1rem;
+}
+.older_posts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post_box{
+    background-color: lightgray;
+}
+
+.post_box h2 {
+    font-size: 1.2rem;
+}

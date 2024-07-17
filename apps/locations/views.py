@@ -18,3 +18,11 @@ def eat(request):
 def stays(request):
     
     return render(request, 'locations/stays.html')
+
+
+
+
+
+def events(request):
+    
+    return render(request, 'locations/events.html')
